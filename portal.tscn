@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://tjt4h6pd1lo4"]
+
+[ext_resource type="Script" path="res://portal.gd" id="1_busoy"]
+[ext_resource type="Shader" path="res://portal2.gdshader" id="2_kh3l7"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_qh6x1"]
+noise_type = 5
+offset = Vector3(2.08167e-08, 2.08167e-08, 2.08167e-08)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_njmjs"]
+seamless = true
+noise = SubResource("FastNoiseLite_qh6x1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mbqq3"]
+render_priority = 0
+shader = ExtResource("2_kh3l7")
+shader_parameter/base_color = Color(0.152941, 0.639216, 0.960784, 1)
+shader_parameter/near_far = Vector2(0.1, 200)
+shader_parameter/hexes_scale = 2.0
+shader_parameter/hex_tex = SubResource("NoiseTexture2D_njmjs")
+
+[sub_resource type="BoxMesh" id="BoxMesh_14ktx"]
+material = SubResource("ShaderMaterial_mbqq3")
+size = Vector3(1, 2, 0.1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qhy1c"]
+size = Vector3(1, 2, 0.1)
+
+[node name="Portal" type="Area3D"]
+collision_mask = 2
+script = ExtResource("1_busoy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("BoxMesh_14ktx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_qhy1c")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

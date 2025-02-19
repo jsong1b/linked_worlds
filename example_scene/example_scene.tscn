@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://xyaw74ddinqr"]
+
+[ext_resource type="PackedScene" uid="uid://di5lln257xm7i" path="res://fps_player.tscn" id="1_aey6q"]
+[ext_resource type="PackedScene" uid="uid://tjt4h6pd1lo4" path="res://portal.tscn" id="2_0hux7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8s4g8"]
+albedo_color = Color(0.388672, 0.388672, 0.388672, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5rond"]
+material = SubResource("StandardMaterial3D_8s4g8")
+size = Vector3(25, 0.1, 25)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6aoix"]
+points = PackedVector3Array(-12.5, -0.05, -12.5, -12.5, 0.05, -12.5, 12.5, -0.05, -12.5, -12.5, -0.05, 12.5, -12.5, 0.05, 12.5, 12.5, 0.05, -12.5, 12.5, -0.05, 12.5, 12.5, 0.05, 12.5)
+
+[node name="ExampleScene" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_5rond")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConvexPolygonShape3D_6aoix")
+
+[node name="FPSPlayer" parent="." instance=ExtResource("1_aey6q")]
+
+[node name="Portal" parent="." instance=ExtResource("2_0hux7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0576067, -6.18158)
