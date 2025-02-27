@@ -3,11 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://di5lln257xm7i" path="res://fps_player.tscn" id="1_aey6q"]
 [ext_resource type="PackedScene" uid="uid://tjt4h6pd1lo4" path="res://portal.tscn" id="2_0hux7"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8s4g8"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bs3g2"]
 albedo_color = Color(0.388672, 0.388672, 0.388672, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_5rond"]
-material = SubResource("StandardMaterial3D_8s4g8")
+material = SubResource("StandardMaterial3D_bs3g2")
 size = Vector3(25, 0.1, 25)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6aoix"]
