@@ -20,3 +20,14 @@ shape = SubResource("BoxShape3D_2idgc")
 [node name="Capsule Collision" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 shape = SubResource("CapsuleShape3D_ldbj0")
+
+[node name="Slide Timeout" type="Timer" parent="."]
+wait_time = 0.75
+one_shot = true
+
+[node name="Coyote Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
+[connection signal="timeout" from="Slide Timeout" to="." method="_on_slide_timeout_timeout"]
+[connection signal="timeout" from="Coyote Timer" to="." method="_on_coyote_timer_timeout"]
