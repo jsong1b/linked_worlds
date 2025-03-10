@@ -29,13 +29,14 @@ uv1_scale = Vector3(22.5, 15, 10)
 [node name="Jason\'s Level" type="Node3D"]
 
 [node name="World" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.44968, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="World"]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 shadow_enabled = true
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 1.21852, -2.27883, 24.6808)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 1.21852, -2.27883, 20.8345)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -67,7 +68,7 @@ mesh = SubResource("BoxMesh_6xfl4")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -2.49603, -2.80353, 32.5706)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -2.49603, -2.80353, 28.422)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -78,7 +79,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 2.5603, -2.61376, 38.5559)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 2.5603, -2.61376, 34.5753)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -166,7 +167,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D16" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 4.64006, -3.04004, 134.871)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 2.95206, -3.04004, 133.577)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -177,7 +178,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D17" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -2.68659, -2.59857, 139.586)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -0.998594, -2.59857, 138.517)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -188,7 +189,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D18" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -8.10188, -2.07682, 143.176)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -6.18882, -2.07682, 142.67)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -221,7 +222,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D21" type="MeshInstance3D" parent="World"]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -4.11954, -0.379243, 157.279)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, -1.64381, -0.379243, 156.604)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -253,7 +254,7 @@ mesh = SubResource("BoxMesh_6xfl4")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="Portal" parent="World" instance=ExtResource("2_xk1mc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20.2363, 333.87)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20.2363, 330.895)
 
 [node name="MeshInstance3D24" type="MeshInstance3D" parent="World"]
 transform = Transform3D(0.5, 0, 0, 0, -1.74846e-07, -2, 0, 4, -8.74228e-08, 0.66539, 20.834, 173.459)
@@ -276,7 +277,7 @@ mesh = SubResource("BoxMesh_6xfl4")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D26" type="MeshInstance3D" parent="World"]
-transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 0.25, 0, 30.466, 231.799)
+transform = Transform3D(1, 0, 0, 0, 10, 0, 0, 0, 0.25, 0, 30.466, 228.824)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -287,7 +288,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D27" type="MeshInstance3D" parent="World"]
-transform = Transform3D(-4.37114e-08, -2.5, 0, 1, -1.09278e-07, 0, 0, 0, 1, -6, 30.466, 251.113)
+transform = Transform3D(-4.37114e-08, -2.5, 0, 1, -1.09278e-07, 0, 0, 0, 1, -6, 30.466, 248.138)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -296,6 +297,18 @@ skeleton = NodePath("../MeshInstance3D5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World/MeshInstance3D27/StaticBody3D"]
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
+
+[node name="Label3D" type="Label3D" parent="World"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -4.99494, 172.089)
+modulate = Color(0, 0.705882, 1, 1)
+text = "Jumping on a wall pushes you away from the wall."
+font_size = 60
+
+[node name="Label3D2" type="Label3D" parent="World"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.0188828, 34.1239, 203.193)
+modulate = Color(1, 0, 0, 1)
+text = "Jumping while sliding (holding left click after running forward) makes you jump farther."
+font_size = 60
 
 [node name="Jason\'s Player Controller" parent="." instance=ExtResource("2_qj8fa")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
@@ -322,7 +335,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D20" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 0, 30.466, 217.328)
+transform = Transform3D(0.1, 0, 0, 0, 10, 0, 0, 0, 0.1, 0, 30.466, 215.51)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -333,7 +346,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D27" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, -2.5, 0, 1, -1.09278e-07, 0, 0, 0, 1, 6, 28.466, 275.413)
+transform = Transform3D(-4.37114e-08, -2.5, 0, 1, -1.09278e-07, 0, 0, 0, 1, 6, 28.466, 272.438)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -344,7 +357,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D28" type="MeshInstance3D" parent="."]
-transform = Transform3D(-4.37114e-08, -2.5, 0, 1, -1.09278e-07, 0, 0, 0, 1, -6, 25.466, 299.827)
+transform = Transform3D(-4.37114e-08, -2.5, 0, 1, -1.09278e-07, 0, 0, 0, 1, -6, 25.466, 296.852)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 skeleton = NodePath("../MeshInstance3D5")
@@ -355,7 +368,7 @@ skeleton = NodePath("../MeshInstance3D5")
 shape = SubResource("ConvexPolygonShape3D_v8ot0")
 
 [node name="MeshInstance3D24" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 9, 0, 0, 0, 1, 0, 19.4962, 328.842)
+transform = Transform3D(1, 0, 0, 0, 9, 0, 0, 0, 1, 0, 19.4962, 325.867)
 material_override = SubResource("StandardMaterial3D_xiovp")
 mesh = SubResource("BoxMesh_6xfl4")
 
